@@ -6,8 +6,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Liam">
-<link rel="manifest" href='data:application/manifest+json,{"name":"Liam apprend \!","short_name":"Liam","start_url":"./","display":"fullscreen","background_color":"%230f1b2d","theme_color":"%230f1b2d","orientation":"portrait-primary","icons":[{"src":"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%230f1b2d%27/%3E%3Ctext y=%270.9em%27 font-size=%2780%27 x=%2710%27%3E🚀%3C/text%3E%3C/svg%3E","sizes":"any","type":"image/svg+xml"}]}'>
-<meta name="theme-color" content="#0f1b2d">
 <title>Liam apprend</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -402,6 +400,48 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Helvetica Neue',Ar
 .cr-garden-item{font-size:clamp(24px,7vw,36px);cursor:pointer;padding:6px 8px;border-radius:10px;background:rgba(255,255,255,.07);border:2px solid rgba(255,138,128,.3);transition:transform .15s}
 .cr-garden-item:active{transform:scale(.9)}
 .cr-garden-item.active-item{border-color:#FF8A80;background:rgba(255,138,128,.25)}
+
+/* ── ALPHABET ── */
+.cat-btn.alphabet{background:linear-gradient(135deg,#2a1e00,#1a1200);border:3px solid #FFB300}
+#screen-alphabet{background:linear-gradient(160deg,#1a1200,#2a1e00);padding:20px 16px;justify-content:flex-start;padding-top:28px}
+.alphabet-title{font-size:clamp(22px,5vw,40px);font-weight:900;color:#FFB300;text-shadow:0 3px 12px rgba(0,0,0,.5);margin-bottom:4px;text-align:center}
+.alphabet-sub{font-size:clamp(12px,2.6vw,18px);color:#ffe082;margin-bottom:18px;text-align:center}
+.alphabet-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;width:100%;max-width:min(420px,94vw)}
+.alphabet-btn{background:linear-gradient(145deg,#2a1e00,#1a1200);border:3px solid #FF8F00;border-radius:20px;padding:20px 16px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;transition:transform .15s;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.alphabet-btn:active{transform:scale(.93)}
+.alphabet-btn .ab-icon{font-size:clamp(36px,9vw,56px)}
+.alphabet-btn .ab-name{font-size:clamp(14px,3vw,20px);font-weight:700;color:#FFB300;text-align:center}
+.alphabet-btn .ab-desc{font-size:clamp(10px,2.2vw,13px);color:#ffe082;text-align:center;opacity:.8}
+#screen-explolettres{background:linear-gradient(160deg,#1a1200,#2a1a00)}
+#screen-defilealpha{background:linear-gradient(160deg,#1a1200,#1a1800)}
+.al-grid{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-width:500px;width:100%;padding:4px}
+.al-letter-btn{background:linear-gradient(145deg,#2a1e00,#1a1200);border:3px solid #FF8F00;border-radius:12px;width:clamp(40px,9.5vw,56px);height:clamp(40px,9.5vw,56px);font-size:clamp(18px,4.5vw,28px);font-weight:900;color:#FFB300;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s,border-color .15s}
+.al-letter-btn:active{transform:scale(.88)}
+.al-letter-btn.active{border-color:#FFE082;background:linear-gradient(145deg,#3a2e00,#2a1e00);transform:scale(1.12)}
+.al-info{background:rgba(255,255,255,.07);border:2px solid rgba(255,179,0,.3);border-radius:20px;padding:14px;min-height:108px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:100%;max-width:400px}
+.al-letter-big{font-size:clamp(50px,13vw,76px);font-weight:900;color:#FFB300;line-height:1}
+.al-word-em{font-size:clamp(36px,9vw,54px);line-height:1}
+.al-word-name{font-size:clamp(14px,3.5vw,20px);color:#ffe082;font-weight:700;text-align:center}
+.al-defile-center{display:flex;flex-direction:column;align-items:center;gap:10px;flex:1;justify-content:center;width:100%}
+.al-defile-letter{font-size:clamp(80px,20vw,130px);font-weight:900;color:#FFB300;line-height:1;text-align:center}
+.al-defile-em{font-size:clamp(48px,12vw,72px);text-align:center;line-height:1}
+.al-defile-word{font-size:clamp(16px,4vw,24px);color:#ffe082;font-weight:700;text-align:center}
+.al-prog{font-size:13px;color:rgba(255,255,255,.4);text-align:center;letter-spacing:1px}
+.al-nav{display:flex;gap:14px;justify-content:center;align-items:center;padding:6px 0}
+.al-nav-btn{background:linear-gradient(145deg,#3a2a00,#2a1e00);border:3px solid #FFB300;border-radius:14px;padding:12px 18px;font-size:clamp(18px,4.5vw,28px);font-weight:700;color:#FFB300;cursor:pointer;transition:transform .15s}
+.al-nav-btn:active{transform:scale(.9)}
+.al-auto-btn{background:linear-gradient(135deg,#FFB300,#FF8F00);border:none;border-radius:14px;padding:12px 22px;font-size:clamp(14px,3.5vw,20px);font-weight:700;color:#1a1200;cursor:pointer;transition:transform .15s}
+.al-auto-btn:active{transform:scale(.93)}
+/* ── CHIFFRES ── */
+.cat-btn.chiffres{background:linear-gradient(135deg,#00141a,#000e14);border:3px solid #26C6DA}
+#screen-chiffres{background:linear-gradient(160deg,#000e14,#001a20);padding:16px;justify-content:flex-start;padding-top:16px;overflow-y:auto}
+.ch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;width:100%;max-width:min(420px,94vw);padding:4px}
+.ch-card{background:linear-gradient(145deg,#00141a,#000e14);border:3px solid #0097A7;border-radius:20px;padding:14px 10px;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;transition:transform .15s,border-color .2s;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.ch-card:active{transform:scale(.92)}
+.ch-card.tapped{border-color:#26C6DA}
+.ch-digit{font-size:clamp(44px,11vw,64px);font-weight:900;color:#26C6DA;line-height:1}
+.ch-word{font-size:clamp(14px,3.2vw,20px);font-weight:700;color:#80DEEA;text-transform:capitalize}
+.ch-dots{font-size:clamp(14px,3.5vw,20px);line-height:1.5;text-align:center;min-height:26px;word-break:break-all;max-width:160px;transition:opacity .2s}
 </style>
 </head>
 <body>
@@ -430,6 +470,14 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Helvetica Neue',Ar
     <button class="cat-btn creativite" onclick="showScreen('creativite')">
       <div class="cat-icon">🎨</div>
       <div><span class="cat-name">Créativité</span><span class="cat-desc">10 jeux de créa &amp; imagination</span></div>
+    </button>
+  <button class="cat-btn alphabet" onclick="showScreen('alphabet')">
+      <div class="cat-icon">🔤</div>
+      <div><span class="cat-name">Alphabet</span><span class="cat-desc">Explore les lettres A → Z</span></div>
+    </button>
+    <button class="cat-btn chiffres" onclick="showScreen('chiffres')">
+      <div class="cat-icon">🔢</div>
+      <div><span class="cat-name">Les chiffres</span><span class="cat-desc">Découvre 1 → 10</span></div>
     </button>
   </div>
 </div>
@@ -990,6 +1038,60 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Helvetica Neue',Ar
 
 
 
+
+
+<div class="screen" id="screen-alphabet">
+  <button class="menu-back" onclick="goHome()">← Retour</button>
+  <div class="alphabet-title">🔤 Alphabet</div>
+  <div class="alphabet-sub">Apprends les lettres !</div>
+  <div class="alphabet-grid">
+    <button class="alphabet-btn" onclick="startGame('explolettres')">
+      <div class="ab-icon">🖥️</div>
+      <div class="ab-name">Explore les lettres</div>
+      <div class="ab-desc">Touche une lettre pour l’entendre</div>
+    </button>
+    <button class="alphabet-btn" onclick="startGame('defilealpha')">
+      <div class="ab-icon">🎞️</div>
+      <div class="ab-name">Le défilé</div>
+      <div class="ab-desc">A → B → C… une lettre à la fois</div>
+    </button>
+  </div>
+</div>
+
+<div class="screen" id="screen-explolettres">
+  <div class="game-header"><button class="btn-back" onclick="goAlphabet()">←</button><div class="game-title-bar">🖥️ Explore les lettres</div><div style="min-width:60px"></div></div>
+  <div id="explolettres-level" class="level-screen"><div class="level-title">Touche une lettre pour l’entendre !</div><div class="level-btns"><button class="level-btn" onclick="initExplolettres()"><span class="li">😊</span>Jouer !</button></div></div>
+  <div id="explolettres-play" class="game-area" style="display:none;flex-direction:column;align-items:center;gap:12px;padding:8px;overflow-y:auto">
+    <div class="al-grid" id="explolettres-grid"></div>
+    <div class="al-info" id="explolettres-info"><span style="opacity:.4">Touche une lettre !</span></div>
+  </div>
+</div>
+
+<div class="screen" id="screen-defilealpha">
+  <div class="game-header"><button class="btn-back" onclick="goAlphabet()">←</button><div class="game-title-bar">🎞️ Le défilé</div><div style="min-width:60px"></div></div>
+  <div id="defilealpha-level" class="level-screen"><div class="level-title">Les lettres défilent une à une !</div><div class="level-btns"><button class="level-btn" onclick="initDefilealpha()"><span class="li">🎬</span>Commencer !</button></div></div>
+  <div id="defilealpha-play" class="game-area" style="display:none;flex-direction:column;align-items:center;gap:8px;padding:8px">
+    <div class="al-prog" id="defile-prog">1 / 26</div>
+    <div class="al-defile-center">
+      <div class="al-defile-letter" id="defile-letter">A</div>
+      <div class="al-defile-em" id="defile-em">✈️</div>
+      <div class="al-defile-word" id="defile-word">A comme Avion</div>
+    </div>
+    <div class="al-nav">
+      <button class="al-nav-btn" onclick="dfPrev()">←</button>
+      <button class="al-auto-btn" id="df-auto-btn" onclick="dfAuto()">▶ Auto</button>
+      <button class="al-nav-btn" onclick="dfNext()">→</button>
+    </div>
+  </div>
+</div>
+
+<div class="screen" id="screen-chiffres">
+  <div class="game-header"><button class="btn-back" onclick="goHome()">←</button><div class="game-title-bar">🔢 Les chiffres</div><div style="min-width:60px"></div></div>
+  <div id="chiffres-level" class="level-screen"><div class="level-title">Touche un chiffre pour l’entendre !</div><div class="level-btns"><button class="level-btn" onclick="initChiffres()"><span class="li">😊</span>Jouer !</button></div></div>
+  <div id="chiffres-play" class="game-area" style="display:none;flex-direction:column;align-items:center;padding:8px;overflow-y:auto">
+    <div class="ch-grid" id="chiffres-grid"></div>
+  </div>
+</div>
 
 <div id="celebration"><div class="celeb-emoji" id="celeb-emoji">🎉</div><div class="celeb-text" id="celeb-text">Bravo Liam !</div><div class="celeb-stars" id="celeb-stars">⭐⭐⭐</div><button class="celeb-next" onclick="onCelebNext()">▶ Encore !</button></div>
 <div id="wrong-flash"></div>
@@ -3034,14 +3136,14 @@ function crMonstreRandom(){
 
 // ── Game 4: Ma mélodie ────────────────────────────────────────────
 const INSTRS=[
-  {em:'\U0001F941',name:'tambour',freq:120,type:'square'},
-  {em:'\U0001F3B8',name:'guitare',freq:330,type:'sawtooth'},
-  {em:'\U0001F3B9',name:'piano',freq:440,type:'sine'},
-  {em:'\U0001F3BA',name:'trompette',freq:550,type:'square'},
-  {em:'\U0001FA97',name:'accordéon',freq:220,type:'triangle'},
-  {em:'\U0001F514',name:'cloche',freq:880,type:'sine'},
-  {em:'\U0001F3BB',name:'violon',freq:660,type:'sawtooth'},
-  {em:'\U0001F941',name:'bongo',freq:80,type:'square'}
+  {em:'🥁',name:'tambour',freq:120,type:'square'},
+  {em:'🎸',name:'guitare',freq:330,type:'sawtooth'},
+  {em:'🎹',name:'piano',freq:440,type:'sine'},
+  {em:'🎺',name:'trompette',freq:550,type:'square'},
+  {em:'🪗',name:'accordéon',freq:220,type:'triangle'},
+  {em:'🔔',name:'cloche',freq:880,type:'sine'},
+  {em:'🎻',name:'violon',freq:660,type:'sawtooth'},
+  {em:'🥁',name:'bongo',freq:80,type:'square'}
 ];
 let _MEL={n:4,seq:[],playing:false,audioCtx:null};
 function initMelodie(n){
@@ -3079,7 +3181,7 @@ function crMelPlay(){
 function crMelClear(){_MEL.seq=[];crMelRenderSeq();}
 
 // ── Game 5: La recette magique ────────────────────────────────────
-const INGRS=['\U0001F34E','\U0001F34C','\U0001F355','\U0001F354','\U0001F9C0','\U0001F370','\U0001F36C','\U0001F951','\U0001F344','\U0001F353','\U0001F96A','\U0001F95A','\U0001F9C1','\U0001F36F','\U0001FAD0','\U0001F952'];
+const INGRS=['🍎','🍌','🍕','🍔','🧀','🍰','🍬','🥑','🍄','🍓','🥪','🥚','🧁','🍯','🫐','🥒'];
 const RECETTE_ADJ=[['magique','délicieux','surprenant','rigolo','explosif','pétillant'],['de la forêt','du futur','des étoiles','de Liam','arc-en-ciel','invisible']];
 let _RC={n:3,selected:[],pool:[]};
 function initRecette(n){
@@ -3170,9 +3272,9 @@ function crMiColor(c,el){_MIR.color=c;document.querySelectorAll('#miroir-palette
 
 // ── Game 8: Mon histoire ──────────────────────────────────────────
 const HISTOIRE_DATA={
-  heros:[{em:'\U0001F9B8',name:'un super-h\u00e9ros'},{em:'\U0001F9DA',name:'une f\u00e9e'},{em:'\U0001F409',name:'un dragon'},{em:'\U0001F9D9',name:'un magicien'},{em:'\U0001F984',name:'une licorne'}],
-  lieu:[{em:'\U0001F3F0',name:'dans un ch\u00e2teau'},{em:'\U0001F332',name:'dans la for\u00eat'},{em:'\U0001F30A',name:'sous la mer'},{em:'\U0001F680',name:'dans l\u2019espace'},{em:'\U0001F3DD',name:'sur une \u00eele'}],
-  action:[{em:'\U0001F409',name:'combat un monstre'},{em:'\U0001F381',name:'trouve un tr\u00e9sor'},{em:'\U0001F9B9',name:'sauve un ami'},{em:'\U0001F31F',name:'r\u00e9alise un v\u0153u'},{em:'\U0001F3A0',name:'part \u00e0 l\u2019aventure'}]
+  heros:[{em:'🦸',name:'un super-h\u00e9ros'},{em:'🧚',name:'une f\u00e9e'},{em:'🐉',name:'un dragon'},{em:'🧙',name:'un magicien'},{em:'🦄',name:'une licorne'}],
+  lieu:[{em:'🏰',name:'dans un ch\u00e2teau'},{em:'🌲',name:'dans la for\u00eat'},{em:'🌊',name:'sous la mer'},{em:'🚀',name:'dans l\u2019espace'},{em:'🏝',name:'sur une \u00eele'}],
+  action:[{em:'🐉',name:'combat un monstre'},{em:'🎁',name:'trouve un tr\u00e9sor'},{em:'🦹',name:'sauve un ami'},{em:'🌟',name:'r\u00e9alise un v\u0153u'},{em:'🎠',name:'part \u00e0 l\u2019aventure'}]
 };
 let _HI={n:3,chosen:{heros:null,lieu:null,action:null}};
 function initMonhistoire(n){
@@ -3184,7 +3286,7 @@ function initMonhistoire(n){
 }
 function crHistoireRender(){
   const keys=['heros','lieu','action'];
-  const labels=['\U0001F9B8 H\u00e9ros','\U0001F4CD Lieu','\u26A1 Action'];
+  const labels=['🦸 H\u00e9ros','📍 Lieu','\u26A1 Action'];
   document.getElementById('monhistoire-sections').innerHTML=keys.map((k,ki)=>`<div class="cr-story-row"><div class="cr-story-label">${labels[ki]}</div><div class="cr-story-opts">${HISTOIRE_DATA[k].slice(0,_HI.n).map(o=>`<button class="cr-story-opt${_HI.chosen[k]===o.name?' chosen':''}" onclick="crHistoirePick('${k}','${o.name}',this)">${o.em}</button>`).join('')}</div></div>`).join('');
 }
 function crHistoirePick(k,name,el){
@@ -3195,13 +3297,13 @@ function crHistoirePick(k,name,el){
 function crHistoireGen(){
   const {heros,lieu,action}=_HI.chosen;
   if(!heros||!lieu||!action){document.getElementById('monhistoire-result').textContent='Choisis d\u2019abord un h\u00e9ros, un lieu et une action\u00a0!';return;}
-  const story=`Il \u00e9tait une fois ${heros} qui vivait ${lieu}. Un jour, ${heros.split(' ').pop()} ${action}. Et tout le monde fut heureux\u00a0! \U0001F31F`;
+  const story=`Il \u00e9tait une fois ${heros} qui vivait ${lieu}. Un jour, ${heros.split(' ').pop()} ${action}. Et tout le monde fut heureux\u00a0! 🌟`;
   document.getElementById('monhistoire-result').textContent=story;playOk();
 }
 function crHistoireNew(){_HI.chosen={heros:null,lieu:null,action:null};crHistoireRender();document.getElementById('monhistoire-result').textContent='Choisis ton h\u00e9ros, un lieu et une aventure\u00a0!';}
 
 // ── Game 9: Copie la grimace ──────────────────────────────────────
-const GRIMACES=['\U0001F604','\U0001F621','\U0001F632','\U0001F602','\U0001F929','\U0001F97A','\U0001F92C','\U0001F973','\U0001F912','\U0001F644','\U0001F60D','\U0001F631','\U0001F92B','\U0001F974','\U0001F970'];
+const GRIMACES=['😄','😡','😲','😂','🤩','🥺','🤬','🥳','🤒','🙄','😍','😱','🤫','🥴','🥰'];
 let _GR={max:6,score:0,round:0,cur:''};
 function initGrimace(n){
   _GR.max=n;_GR.score=0;_GR.round=0;
@@ -3227,7 +3329,7 @@ function grPick(g,el){
 }
 
 // ── Game 10: Mon jardin ───────────────────────────────────────────
-const JARDIN_ITEMS=['\U0001F33C','\U0001F33B','\U0001F337','\U0001F338','\U0001F333','\U0001F332','\U0001F331','\U0001F40C','\U0001F98B','\U0001F41D','\U0001F430','\U0001F407','\U0001F422','\U0001F343','\U0001F341','\u2600\uFE0F'];
+const JARDIN_ITEMS=['🌼','🌻','🌷','🌸','🌳','🌲','🌱','🐌','🦋','🐝','🐰','🐇','🐢','🍃','🍁','\u2600\uFE0F'];
 let _JD={n:12,cells:[],activeItem:null};
 function initJardin(n){
   _JD.n=n;_JD.activeItem=JARDIN_ITEMS[0];
@@ -3255,17 +3357,138 @@ function crJardinPlace(i){
 }
 function crJardinClear(){if(_JD.cells)_JD.cells=Array(_JD.n).fill('');crJardinRender();}
 
+
+// ── SHARED: Text-to-Speech ────────────────────────────────────────
+function crSpeak(text, rate) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'fr-FR';
+  u.rate = rate || 0.82;
+  u.pitch = 1.1;
+  window.speechSynthesis.speak(u);
+}
+
+// ── Navigation ────────────────────────────────────────────────────
+function goAlphabet(){clearAllT();window.speechSynthesis.cancel();showScreen('alphabet');}
+
+// ── Alphabet data ─────────────────────────────────────────────────
+const ALPHA_WORDS={
+  A:{w:'Avion',em:'\u2708\uFE0F'},B:{w:'Ballon',em:'🎈'},C:{w:'Chat',em:'🐱'},
+  D:{w:'Dauphin',em:'🐬'},E:{w:'\u00C9l\u00E9phant',em:'🐘'},F:{w:'Fleur',em:'🌸'},
+  G:{w:'Girafe',em:'🦒'},H:{w:'Hibou',em:'🦉'},I:{w:'\u00CEle',em:'🏝\uFE0F'},
+  J:{w:'Jaguar',em:'🐆'},K:{w:'Koala',em:'🐨'},L:{w:'Lion',em:'🦁'},
+  M:{w:'Maison',em:'🏠'},N:{w:'Nuage',em:'\u2601\uFE0F'},O:{w:'Orange',em:'🍊'},
+  P:{w:'Papillon',em:'🦋'},Q:{w:'Quille',em:'🎳'},R:{w:'Renard',em:'🦊'},
+  S:{w:'Soleil',em:'\u2600\uFE0F'},T:{w:'Train',em:'🚂'},U:{w:'Univers',em:'🌌'},
+  V:{w:'Vache',em:'🐄'},W:{w:'Wagon',em:'🚃'},X:{w:'Xylophone',em:'🎵'},
+  Y:{w:'Yaourt',em:'🥛'},Z:{w:'Z\u00E8bre',em:'🦓'}
+};
+const ALPHA_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+// ── Game 1: Explore les lettres ───────────────────────────────────
+function initExplolettres(){
+  document.getElementById('explolettres-level').style.display='none';
+  document.getElementById('explolettres-play').style.display='flex';
+  document.getElementById('explolettres-info').innerHTML='<span style="opacity:.4">Touche une lettre\u00a0!</span>';
+  document.getElementById('explolettres-grid').innerHTML=
+    ALPHA_LETTERS.map(l=>`<button class="al-letter-btn" onclick="alTouchLettre('${l}',this)">${l}</button>`).join('');
+}
+function alTouchLettre(l,el){
+  document.querySelectorAll('.al-letter-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  const d=ALPHA_WORDS[l];
+  document.getElementById('explolettres-info').innerHTML=
+    `<div class="al-letter-big">${l}</div><div class="al-word-em">${d.em}</div><div class="al-word-name">${l} comme ${d.w}</div>`;
+  crSpeak(l, 0.75);
+  st(()=>crSpeak(`${l} comme ${d.w}`, 0.85), 800);
+}
+
+// ── Game 2: Le défilé ─────────────────────────────────────────────
+let _DF={idx:0,playing:false};
+function initDefilealpha(){
+  document.getElementById('defilealpha-level').style.display='none';
+  document.getElementById('defilealpha-play').style.display='flex';
+  _DF.idx=0;_DF.playing=false;
+  dfShow(0);
+}
+function dfShow(idx){
+  if(idx<0||idx>25)return;
+  _DF.idx=idx;
+  const l=ALPHA_LETTERS[idx],d=ALPHA_WORDS[l];
+  document.getElementById('defile-letter').textContent=l;
+  document.getElementById('defile-em').textContent=d.em;
+  document.getElementById('defile-word').textContent=`${l} comme ${d.w}`;
+  document.getElementById('defile-prog').textContent=`${idx+1} / 26`;
+  crSpeak(l, 0.75);
+  st(()=>crSpeak(`${l} comme ${d.w}`, 0.85), 800);
+}
+function dfPrev(){clearAllT();_DF.playing=false;dfBtnReset();if(_DF.idx>0)dfShow(_DF.idx-1);}
+function dfNext(){clearAllT();_DF.playing=false;dfBtnReset();if(_DF.idx<25)dfShow(_DF.idx+1);}
+function dfBtnReset(){
+  const btn=document.getElementById('df-auto-btn');
+  if(btn)btn.textContent='\u25b6 Auto';
+}
+function dfAuto(){
+  const btn=document.getElementById('df-auto-btn');
+  if(_DF.playing){
+    _DF.playing=false;clearAllT();
+    if(btn)btn.textContent='\u25b6 Auto';
+    return;
+  }
+  _DF.playing=true;
+  if(btn)btn.textContent='\u23f8 Pause';
+  function step(){
+    if(!_DF.playing)return;
+    dfShow(_DF.idx);
+    if(_DF.idx>=25){_DF.playing=false;if(btn)btn.textContent='\u25b6 Auto';return;}
+    st(()=>{if(_DF.playing){_DF.idx++;step();}},3200);
+  }
+  step();
+}
+
+// ── Chiffres data ─────────────────────────────────────────────────
+const NOMBRES=[
+  {n:1,w:'un',em:'🌟'},
+  {n:2,w:'deux',em:'🌙'},
+  {n:3,w:'trois',em:'\u2B50'},
+  {n:4,w:'quatre',em:'🍀'},
+  {n:5,w:'cinq',em:'🌺'},
+  {n:6,w:'six',em:'🍎'},
+  {n:7,w:'sept',em:'🌈'},
+  {n:8,w:'huit',em:'🎈'},
+  {n:9,w:'neuf',em:'🦋'},
+  {n:10,w:'dix',em:'🚀'}
+];
+
+// ── Game 3: Les chiffres ──────────────────────────────────────────
+function initChiffres(){
+  document.getElementById('chiffres-level').style.display='none';
+  document.getElementById('chiffres-play').style.display='flex';
+  document.getElementById('chiffres-grid').innerHTML=
+    NOMBRES.map(nb=>`<button class="ch-card" id="chcard-${nb.n}" onclick="chTouch(${nb.n})">
+      <div class="ch-digit">${nb.n}</div>
+      <div class="ch-word">${nb.w}</div>
+      <div class="ch-dots" id="chdots-${nb.n}">${nb.em.repeat(nb.n)}</div>
+    </button>`).join('');
+}
+function chTouch(n){
+  const nb=NOMBRES[n-1];
+  crSpeak(nb.w, 0.78);
+  // Animate dots appearing one by one
+  const dots=document.getElementById('chdots-'+n);
+  if(!dots)return;
+  dots.textContent='';
+  for(let i=0;i<n;i++){
+    st(()=>{dots.textContent+=nb.em;},i*220+400);
+  }
+  // Flash the card border
+  const card=document.getElementById('chcard-'+n);
+  if(card){card.classList.add('tapped');st(()=>card.classList.remove('tapped'),800);}
+}
+
 // ── Init ──────────────────────────────────────────────────────────
 document.addEventListener('touchstart',()=>{try{ac().resume();}catch(e){}},{once:true});
-</script>
-<script>
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>{
-    navigator.serviceWorker.register('./sw.js')
-      .then(()=>console.log('SW OK'))
-      .catch(e=>console.warn('SW fail',e));
-  });
-}
 </script>
 </body>
 </html>
